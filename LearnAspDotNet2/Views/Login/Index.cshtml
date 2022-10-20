@@ -1,0 +1,110 @@
+﻿@{
+    Layout = null;
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+            <link rel="stylesheet" href="~/css/style1.css"/>
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" href="~/lib/jquery/dist/jquery.js" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <title>@ViewData["Title"]</title>
+        </head>
+        <body class="__center __bg-g-blue-n5" style="min-height: 100vh;">
+            <div class="__bg-stars"></div>
+            <div class="container">
+                <div class="row __center">
+                    <div class="__card" style="max-width: 1000px;min-height: 500px;">
+                        <div class="container px-0">
+                            <div class="row">
+                                <div class="col-12 col-md col-lg-4 __bg-g-blue pt-4 ps-4" style="text-shadow: 1px 1px 2px black;color: white;">
+                                    <div class="row d-flex justify-content-center align-items-lg-center">
+                                        <i class="fas fa-graduation-cap fs-1 text-light w-auto" style="text-shadow: 1px 1px 2px black;"></i>
+                                        <h1 class="m-0 text-light w-auto ps-0" style="text-shadow: 1px 1px 2px black;">Tarik bno ziad</h1>
+                                    </div>
+                                    <div class="row ps-4 fs-5 mt-4">
+                                        <ul>
+                                            <li>Tarik bnou ziad c'est votre espace numérique de travail</li>
+                                            <li>Nouvelles infos</li>
+                                            <li>Emploi du temps</li>
+                                            <li>Notes</li>
+                                            <li>Abscences</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3 col-lg-3 d-flex px-0">
+                                    <div class="d-none d-md-block __left-wave w-100"></div>
+                                    <div class="d-md-none d-block __top-wave w-100"></div>
+                                </div>
+                                <div class="col-12 col-md col-lg-5 d-flex justify-content-center align-items-start align-items-md-center px-lg-5" style="min-height: 500px">
+                                    <div class="px-0 row __center w-100">
+                                        <form class="w-100 px-5 px-md-3" action="/Login/VerifyAccount" method="post">
+                                            <div class="row __hcenter">
+                                                <i style="font-size: 50px;color: #0693E3;font-size: 60px;" class="fa-solid fa-user-graduate w-auto"></i>
+                                            </div>
+                                            <div class="row mt-4">
+                                                <!-- email -->
+                                                <div class="position-relative px-0 __emailDiv">
+                                                    <i class="fa-solid fa-envelope position-absolute" style="left:11px;top:10px;color:gray"></i>
+                                                    <input class="__email __input w-100" id="id_userName" name="username" placeholder="User name" maxlength="10" style="padding-left:34px">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-4">
+                                                <!-- pass -->
+                                                <div class="position-relative px-0 __passwordDiv">
+                                                    <i class="fa-solid fa-lock position-absolute" style="left:12px;top:9px;color:gray"></i>
+                                                    <input id="id_password" name="password" type="password" placeholder="Password" class="__input w-100" maxlength="10" style="padding-left:34px">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3 d-flex __vcenter">
+                                                <!-- remember -->
+                                                <input id="remember_me" class="w-auto ms-1" type="checkbox">
+                                                <Label for="remember_me" class="w-auto ps-1">Enregister ma session</Label>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <!-- login -->
+                                            <button id="__idLogin" type="submit" class="btn btn-primary rounded-pill" value="Sign in">Se connecter</button>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a class="ps-0 ms-1" href="forgetpassword.php">Mot de passe oublier ?</a>
+                                            </div>
+                                        </form>
+                                        <div class="row __footer mt-5 px-0">
+                                            <div class="col-12 d-flex justify-content-center">
+                                                <a href="#" class="__socials __bg-fb">
+                                                    <div class="fa fa-facebook"></div>
+                                                </a>
+                                                <a href="#" class="__socials __bg-google">
+                                                    <div class="fa fa-google"></div>
+                                                </a>
+                                                <a href="#" class="__socials __bg-instagram">
+                                                    <div class="fa fa-instagram"></div>
+                                                </a>
+                                            </div>
+                                            <div class="mt-2 col-12 d-flex justify-content-center">
+                                                <a href="#">Francais</a>
+                                                <a href="#">English</a>
+                                                <a href="#">Arabic</a>
+                                            </div>
+                                            <div class="col-12 mt-5 mb-2 d-block d-md-none">
+                                                <h6 align="center">Devlopper par : Tarik Fanid</h6>
+                                                <h6 align="center">&copy; 2022 Version : 2.0</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-12 d-none d-md-flex justify-content-between position-fixed text-light" style="bottom:4px;left:10px;text-shadow:0px 0px 3px black">
+                <h6 class="w-auto">Devlopper par : Tarik Fanid</h6>
+                <h6 class="w-auto">&copy; 2022 Version : 2.0</h6>
+            </div>            
+        </body>
+    </html>
+}
